@@ -34,6 +34,15 @@ Type I2 is allocated for instructions that depend on immediate values, such as a
 
 The basic set includes instructions for managing graph reduction such as fixed-point (`fix`, or Y combinator), force strict-evaluation (`seq`), data output to the peripheral bus `out`, and debugger breakpoint `break`.
 
+## Why Combinators?
+
+Combinators are a symbolic representation for functions that dates back to the work of Moses Schonfinkel in the late 1910s and early 1920s. They form a language that is able to represent *any* computable function, but do not require an specific machine model. Our reasons to continue research with combinators are as follows:
+
+* Machine-independent, instruction-set-level language
+* Formal model that does not require complex operational rules. Pure, untyped lambda-calculus is included in a combinatorial ISA by default.
+* Computation without control-flow. 
+
+In a practical setting, combinators do not require instructions for arbitrary memory handling (load, store, move), branches and jumps. Moreover, combinators help us isolate pure computation from impure IO. The result is a machine language that is algebraically transformable, where intentional effects are isolated from programs without loss of expressivity. In other words, combinators bring safety and security as a default, not as an afterthought.
 
 
 
