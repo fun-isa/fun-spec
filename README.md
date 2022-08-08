@@ -25,7 +25,7 @@ stateful and effectful behaviors is unrepresentable.
 The basic set of fun instructions is composed by instructions of three types: C, I2 and A.
 
 #### Combinators
-Instructions of type C can represent structured combinators with up to 6 nodes, in 64 reduction patterns (type). These combinators can consume up to 8 nodes on reduction (arity).
+Instructions of type C can represent structured combinators with up to 6 nodes, in 64 reduction [patterns](/files/patterns.pdf) (type). These combinators can consume up to 8 nodes on reduction (arity).
 
 #### Arithmetic and Logic
 Type I2 is allocated for instructions that depend on immediate values, such as arithmetic and logic instructions. General instructions are represented via type A.
