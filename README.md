@@ -20,10 +20,11 @@ stateful and effectful behaviors is unrepresentable.
 
 ![Summary of fun instructions](/img/fun-isa.png)
 
+
 ### Basic Set
+The basic set of fun instructions is composed by instructions of three types: C, I2 and A.
 
 #### Combinators
-The basic set of fun instructions is composed by instructions of three types: C, I2 and A.
 Instructions of type C can represent structured combinators with up to 6 nodes, in 64 reduction patterns (type). These combinators can consume up to 8 nodes on reduction (arity).
 
 #### Arithmetic and Logic
